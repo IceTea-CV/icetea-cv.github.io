@@ -1,22 +1,26 @@
 {% assign interests = site.data.data.interests %}
 {% if interests %}
-<div class="interests-container container-block">
-
-  <h2 class="container-block-title">
-    {{ interests.title }}
+<section class="section interest-section">
+  <h2 class="section-title">
+    <span class="fa-stack fa-xs">
+      <i class="fas fa-circle fa-stack-2x"></i>
+      <i class="fas fa-book fa-stack-1x fa-inverse"></i>
+    </span>
+    {{ experiences.title }}
   </h2>
 
-  <ul class="list-unstyled interests-list">
-    {% for interest in interests.info %}
+  {% for experience in interests.info %}
+  <div class="item">
 
-      {% if interest.link %}
-      <li><a href="{{ interest.link }}">{{ interest.item }}</a></li>
-      {% else %}
-      <li>{{ interest.item }}</li>
-      {% endif %}
+    <div class="meta">
+      <div class="upper-row">
+        <h3 class="job-title">{{- experience.role }}</h3>
+      </div><!--//upper-row-->
 
-    {% endfor %}
-  </ul>
+    </div><!--//meta-->
 
-</div><!--//interests-->
+  </div><!--//item-->
+  {% endfor %}
+
+</section><!--//section-->
 {% endif %}
