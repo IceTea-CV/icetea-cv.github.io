@@ -48,8 +48,8 @@ career-profile:
 interests:
   title: Interests
   info:
-    - role: Depth
-    - role: Localization
+    - role: - Depth
+    - role: - Localization
 
 education:
   title: Education
