@@ -9,7 +9,7 @@ sidebar:
 
   # Profile information
   name: JongMin Lee
-  tagline: Machine Learning & \n Computer Vision Reasercher 
+  tagline: Machine Learning & | Computer Vision Reasercher 
   avatar: profile_git.png #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
   # Sidebar links
@@ -33,7 +33,9 @@ sidebar:
 
 interest:
   title: Interest
-  item: Depth Estimation 
+  item: |
+    Depth Estimation & Completion |
+    Localization
   
 career-profile:
   title: Career Profile
