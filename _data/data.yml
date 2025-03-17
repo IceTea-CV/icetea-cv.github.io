@@ -115,22 +115,22 @@ publications:
     bibendum fringilla a eu lectus.
   papers:
     
-  - title: "- **Dense-SfM: Structure from Motion with Dense Consistent Matching**"
+  - title: "**Dense-SfM: Structure from Motion with Dense Consistent Matching**"
     link: "https://arxiv.org/abs/2501.14277"
     authors: "**JongMin Lee**, Sungjoo Yoo"
     conference: "**CVPR 2025**"
 
-  - title: "- **MFOS: Model-Free & One-Shot Object Pose Estimation**"
+  - title: "**MFOS: Model-Free & One-Shot Object Pose Estimation**"
     link: "https://arxiv.org/abs/2310.01897"
     authors: "**JongMin Lee**, Yohann Cabon, Romain Brégier, Sungjoo Yoo, Jerome Revaud"
     conference: "**AAAI 2024**"
     
-  - title: "- **SACReg: Scene-Agnostic Coordinate Regression for Visual Localization**"
+  - title: "**SACReg: Scene-Agnostic Coordinate Regression for Visual Localization**"
     link: "https://arxiv.org/abs/2307.11702"
     authors: "Jerome Revaud, Yohann Cabon, Romain Brégier, **JongMin Lee**, Philippe Weinzaepfel"
     conference: CVPRW 2024
 
-  - title: "- **Multi-Scale Local Implicit Keypoint Descriptor for Keypoint Matching**"
+  - title: "**Multi-Scale Local Implicit Keypoint Descriptor for Keypoint Matching**"
     link: "https://openaccess.thecvf.com/content/CVPR2023W/IMW/papers/Lee_Multi-Scale_Local_Implicit_Keypoint_Descriptor_for_Keypoint_Matching_CVPRW_2023_paper.pdf"
     authors: "**JongMin Lee**, Eunhyeok Park, Sungjoo Yoo"
     conference: CVPRW 2023
