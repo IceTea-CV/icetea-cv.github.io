@@ -31,6 +31,10 @@ sidebar:
       level: Professional
 
 
+interest:
+  title: Interest
+  item: Depth Estimation 
+  
 career-profile:
   title: Career Profile
   summary: |
@@ -40,6 +44,18 @@ career-profile:
     penatibus et magnis dis parturient montes, nascetur ridiculus mus.
     Donec quam felis, ultricies nec, pellentesque eu.
     Second paragraph if required.
+
+
+interest:
+  title: Interest
+  info:
+  - degree: Combined MS/PhD student in Computer Science & Engineering
+    university: Seoul National University
+    time: 2021 - Present
+    
+  - degree: Bachelor in Computer Science & Engineering
+    university: Seoul National University
+    time: 2016 - 2021
 
 education:
   title: Education
