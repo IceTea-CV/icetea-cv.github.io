@@ -118,12 +118,12 @@ publications:
   - title: "Dense-SfM: Structure from Motion with Dense Consistent Matching"
     link: "https://arxiv.org/abs/2501.14277"
     authors: "**JongMin Lee**, Sungjoo Yoo"
-    conference: **CVPR 2025**
+    conference: "**CVPR 2025**"
 
   - title: "MFOS: Model-Free & One-Shot Object Pose Estimation"
     link: "https://arxiv.org/abs/2310.01897"
     authors: "**JongMin Lee**, Yohann Cabon, Romain Brégier, Sungjoo Yoo, Jerome Revaud"
-    conference: **AAAI 2024**
+    conference: "**AAAI 2024**"
     
   - title: "SACReg: Scene-Agnostic Coordinate Regression for Visual Localization"
     link: "https://arxiv.org/abs/2307.11702"
