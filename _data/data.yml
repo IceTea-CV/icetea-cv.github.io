@@ -48,8 +48,15 @@ career-profile:
 interests:
   title: Interests
   info:
-    - role: "- Depth"
-    - role: "- Localization"
+    - role: "- Image Matching"    
+    - role: "- Visual Localization"
+    - role: "- Structure-from-Motion (SfM)"
+    - role: "- Object Pose Estimation"
+    - role: "- Neural Rendering"
+    - role: "- Depth Estimation & Completion"
+    - role: "- SLAM"
+    
+    
 
 education:
   title: Education
