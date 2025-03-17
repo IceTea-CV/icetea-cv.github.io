@@ -1,6 +1,6 @@
 {% assign interests = site.data.data.interests %}
 {% if interests %}
-<section class="section interest-section">
+<section class="section interests-section">
   <h2 class="section-title">
     <span class="fa-stack fa-xs">
       <i class="fas fa-circle fa-stack-2x"></i>
@@ -9,12 +9,12 @@
     {{ interests.title }}
   </h2>
 
-  {% for experience in interests.info %}
+  {% for interest in interests.info %}
   <div class="item">
 
     <div class="meta">
       <div class="upper-row">
-        <h3 class="job-title">{{experience.role|markdownify}}</h3>
+        <h3 class="job-title">{{interest.role|markdownify}}</h3>
       </div><!--//upper-row-->
 
     </div><!--//meta-->
