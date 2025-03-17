@@ -19,7 +19,8 @@
   {% for publication in publications.papers %}
   <div class="item">
     {% if publication.link %}
-      <li><h4 class="paper-title"><a href="{{ publication.link }}">{{ publication.title |markdownify }}</a></h4></li>    
+      <li><h6 class="paper-title"><i class="fas fa-file-alt"></i> <a href="{{ publication.link }}">{{ publication.title |markdownify }}</a></h6></li>
+      # <li><h6 class="paper-title"><a href="{{ publication.link }}">{{ publication.title |markdownify }}</a></h6></li>    
     {% else %}
       <li>{{ publication.title }}</li>
     {% endif %}
