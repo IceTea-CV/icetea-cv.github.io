@@ -19,7 +19,7 @@
   {% for publication in publications.papers %}
   <div class="item">
     {% if publication.link %}
-      <li><a href="{{ publication.link }}" class="larger-text">{{ publication.title | markdownify}}</a></li>
+      <h5 class="paper-title"> <a href="{{ publication.link }}">{{ publication.title |markdownify }}</a></h5>
 
     {% else %}
       <li>{{ publication.title }}</li>
