@@ -45,8 +45,8 @@ career-profile:
     Second paragraph if required.
 
 
-interest:
-  title: Interest
+interests:
+  title: Interests
   item: |
     Depth Estimation & Completion |
     Localization
