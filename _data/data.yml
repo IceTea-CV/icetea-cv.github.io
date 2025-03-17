@@ -45,16 +45,13 @@ career-profile:
     Second paragraph if required.
 
 
-interests:
-  title: Interests
-  info:
-  - degree: Combined MS/PhD student in Computer Science & Engineering
-    university: Seoul National University
-    time: 2021 - Present
-    
-  - degree: Bachelor in Computer Science & Engineering
-    university: Seoul National University
-    time: 2016 - 2021
+interest:
+  title: Interest
+  item: |
+    Depth Estimation & Completion |
+    Localization
+
+
 
 education:
   title: Education
