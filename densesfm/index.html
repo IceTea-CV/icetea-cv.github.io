@@ -231,14 +231,16 @@
     
     <!-- Text with narrower width -->
     <div class="columns is-centered">
-      <div class="column is-four-fifths">
+      <div class="column is-four-fifths style="width: 85%;">
         <div class="content has-text-justified">          
           <p>
             Our framework is designed as a three-stage pipeline (see figure above):
           </p>
           <p>
             1. Construct an initial SfM model using a two-view dense matcher (e.g. DKM or RoMa).
+            <br>
             2. Extend the track length of each 3D point by projecting it onto new images through Gaussian Splatting.
+            <br>
             3. Perform iterative SfM refinement to enhance the accuracy of poses and point cloud.
           </p>
         </div>
