@@ -108,6 +108,13 @@
             <span class="author-block">Seoul National University</span>
           </div>
 
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2025
+            </span>
+          </div>
+
+
+
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
@@ -180,11 +187,9 @@
 </section>
 
 
-
-
+<!-- div> 
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>        
@@ -201,11 +206,10 @@
         </div>
       </div>
     </div>
-    <!--/ Abstract. -->
 
   </div>
 </section>
-
+</div-->
 
 
 <section class="section">
@@ -230,17 +234,17 @@
       <div class="column is-four-fifths">
         <div class="content has-text-justified">          
           <p>
-            We present Dense-SfM, a novel Structure from Motion (SfM) framework designed for dense and accurate 3D reconstruction from multi-view images. 
+            Our framework is designed as a three-stage pipeline (see figure above):
           </p>
           <br>
           <p>
-            1.
+            1. Construct an initial SfM model using a two-view dense matcher (e.g. DKM or RoMa).
           </p>
           <p>
-            2.
+            2. Extend the track length of each 3D point by projecting it onto new images through Gaussian Splatting.
           </p>
           <p>
-            3.
+            3. Perform iterative SfM refinement to enhance the accuracy of poses and point cloud.
           </p>
         </div>
       </div>

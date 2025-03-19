@@ -15,7 +15,7 @@ sidebar:
   avatar: profile_git.png #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
   # Sidebar links
-  email: sdrjseka96@naver.com
+  email: jongmin.cv@gmail.com
   timezone: KST(Korea Standard Time / UTC+9)  # Enter your timezone, e.g., America/Havana, Africa/Casablanca, America/North_Dakota/Center
   # github: jekyll  
   # phone: 012 345 6789  
@@ -33,16 +33,6 @@ sidebar:
       level: Professional
 
 
-  
-career-profile:
-  title: Career Profile
-  summary: |
-    Summarise your career here lorem ipsum dolor sit amet, consectetuer
-    adipiscing elit. You can [download this free resume/CV template here]().
-    Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque
-    penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-    Donec quam felis, ultricies nec, pellentesque eu.
-    Second paragraph if required.
 
 
 interests:
@@ -76,35 +66,23 @@ experiences:
     time: 2023.01 - 2023.09
     company: Intern
     details: |
-      Describe your role here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-      Cum sociis natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Donec quam felis, ultricies nec,
-      pellentesque eu, pretium quis, sem. Nulla consequat massa quis
-      enim. Donec pede justo. Sed ut perspiciatis unde omnis iste natus
-      error sit voluptatem accusantium doloremque laudantium, totam rem
-      aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-      architecto beatae vitae dicta sunt explicabo.
-      
-  - role: CMALAB @ Seoul National University
-    time: 2020.06 - 2021.02
-    company: Research Intern
-    details: |
-      Describe your role here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-      Cum sociis natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Donec quam felis, ultricies nec,
-      pellentesque eu, pretium quis, sem.
-        - Bullet point
-        - Bullet point
+      I worked at Naver Labs under the supervision of <a href="https://x.com/jeromerevaud">Jerome Revaud</a>, focusing on research in localization, specifically Scene Coordinate Regression and Object Pose Estimation.
+      Under his great guidance, our work was accepted at CVPRW 2024 and AAAI 2024!
+
+
         
   - role: CMALAB @ Seoul National University
     time: 2021.03 - Present
     company: MS/PhD Student
     details: |
-      Describe your role here lorem ipsum dolor sit amet, consectetuer
+      Primarily focused on Localization and Reconstruction.
 
 
+  - role: CMALAB @ Seoul National University
+    time: 2020.06 - 2021.02
+    company: Research Intern
+    details: |
+      Primarily focused on Depth Estimation.
 
 
 publications:
