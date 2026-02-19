@@ -34,7 +34,6 @@ sidebar:
 
 
 
-
 interests:
   title: Interests
   info:
@@ -44,7 +43,7 @@ interests:
     - role: "- Object Pose Estimation"
     - role: "- Neural Rendering"
     - role: "- Depth Estimation & Completion"
-    - role: "- SLAM"
+    # - role: "- SLAM"
     
     
 
@@ -53,15 +52,21 @@ education:
   info:
   - degree: Combined MS/PhD student in Computer Science & Engineering
     university: Seoul National University
-    time: 2021 - Present
+    time: 2021.03 - 2026.02
     
   - degree: Bachelor in Computer Science & Engineering
     university: Seoul National University
-    time: 2016 - 2021
+    time: 2016.03 - 2021.02
 
 experiences:
   title: Experiences
   info:
+  - role: Spatial AI Team @ Naver Labs Korea
+    time: 2025.07 - 2025.12
+    company: Visiting Researcher
+    details: |
+      I worked at Naver Labs focusing on research in Depth Completion on ERP image (panorama).
+
   - role: Spatial AI Team @ Naver Labs Korea
     time: 2023.01 - 2023.09
     company: Intern
@@ -69,14 +74,12 @@ experiences:
       I worked at Naver Labs under the supervision of <a href="https://x.com/jeromerevaud">Jerome Revaud</a>, focusing on research in localization, specifically Scene Coordinate Regression and Object Pose Estimation.
       Under his great guidance, our work was accepted at CVPRW 2024 and AAAI 2024!
 
-
         
   - role: CMALAB @ Seoul National University
-    time: 2021.03 - Present
+    time: 2021.03 - 2026.02
     company: MS/PhD Student
     details: |
-      Primarily focused on Localization and Reconstruction.
-
+      Primarily focused on Visual Localization and 3D Reconstruction.
 
   - role: CMALAB @ Seoul National University
     time: 2020.06 - 2021.02
@@ -87,10 +90,10 @@ experiences:
 
 publications:
   title: Publications
-  intro: |
-    You can list your publications in this section. Lorem ipsum dolor sit
-    amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
-    bibendum fringilla a eu lectus.
+  # intro: |
+  #   You can list your publications in this section. Lorem ipsum dolor sit
+  #   amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
+  #   bibendum fringilla a eu lectus.
   papers:
     
   - title: "Dense-SfM: Structure from Motion with Dense Consistent Matching"
