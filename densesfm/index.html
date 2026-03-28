@@ -39,116 +39,118 @@
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
+
+  <style>
+    .conference-badge {
+      color: #4a76a8;
+      font-weight: 600;
+      font-size: 1rem;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.5rem;
+    }
+    .button.is-rounded.is-outlined.is-medium {
+      font-size: 0.95rem;
+      padding: 0.5em 1.2em;
+    }
+    .method-card {
+      background-color: #f5f5f5;
+      border-radius: 10px;
+      padding: 1.5rem;
+      height: 100%;
+    }
+    .method-card .stage-label {
+      color: #888;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.5rem;
+    }
+    .method-card h4 {
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+    }
+    .method-card p {
+      color: #555;
+      font-size: 0.95rem;
+    }
+    .contribution-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 1.2rem;
+    }
+    .contribution-number {
+      background-color: #6b7280;
+      color: white;
+      border-radius: 50%;
+      min-width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.9rem;
+      margin-right: 1rem;
+      margin-top: 0.15rem;
+    }
+    .contribution-text {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    .section-divider {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 0;
+    }
+    .caption {
+      color: #888 !important;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
 
-<!--
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://keunhong.com">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
-      </a>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://hypernerf.github.io">
-            HyperNeRF
-          </a>
-          <a class="navbar-item" href="https://nerfies.github.io">
-            Nerfies
-          </a>
-          <a class="navbar-item" href="https://latentfusion.github.io">
-            LatentFusion
-          </a>
-          <a class="navbar-item" href="https://photoshape.github.io">
-            PhotoShape
-          </a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</nav>
--->
-
+<!-- Hero -->
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Dense-SfM: Structure from Motion with Dense Consistent Matching</h1>
-          <div class="is-size-5 publication-authors">
+          <p class="conference-badge">CVPR 2025</p>
+          <h1 class="title is-1 publication-title">Dense-SfM: Structure from Motion with<br>Dense Consistent Matching</h1>
+          <div class="is-size-5 publication-authors" style="margin-top: 1.5rem;">
             <span class="author-block">
-              <a href="https://icetea-cv.github.io/">JongMin Lee</a>,
+              <a href="https://icetea-cv.github.io/">Jongmin Lee</a><sup>1</sup>&nbsp;&nbsp;
             </span>
             <span class="author-block">
-              SungJoo Yoo
-            </span>
-            <!--
-            <span class="author-block">
-              <a href="http://www.ricardomartinbrualla.com">Ricardo Martin-Brualla</a><sup>2</sup>
-            </span>
-            -->
-          </div>
-
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">Seoul National University</span>
-          </div>
-
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2025
+              Sungjoo Yoo<sup>1</sup>
             </span>
           </div>
 
+          <div class="is-size-6 publication-authors" style="margin-top: 0.5rem;">
+            <span class="author-block"><sup>1</sup>Seoul National University</span>
+          </div>
 
-
-          <div class="column has-text-centered">
+          <div class="column has-text-centered" style="margin-top: 1.5rem;">
             <div class="publication-links">
-              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://icetea-cv.github.io/densesfm/"
+                   class="button is-rounded is-outlined is-medium">
+                  <span>Project Page</span>
+                </a>
+              </span>
               <span class="link-block">
                 <a href="https://arxiv.org/pdf/2501.14277"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
+                   class="button is-rounded is-outlined is-medium">
                   <span>Paper</span>
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2501.14277"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
+                <a href=""
+                   class="button is-rounded is-outlined is-medium">
+                  <span>Code</span>
                 </a>
               </span>
-
-              <!-- Code Link. -->
-              <span class="link-block">
-                <a href="" class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code (will be open soon) </span>
-                </a>
-              </span>
-              
             </div>
-
           </div>
         </div>
       </div>
@@ -157,192 +159,184 @@
 </section>
 
 
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Your Image. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is full">
-        <!--<h2 class="title is-3">My Test Image</h2>-->
-        <div class="content has-text-centered">
-          <img src="./static/images/final_abs.png" alt="Test image description" width="100%">        
-        </div>
-        
-        <div class="columns is-centered">
-          <div class="column is-four-fifths">
-            <div class="content has-text-justified">          
-              Our Dense-SfM pipeline leverages Gaussian Splatting to offer more accurate and dense 3D points.
-              Thanks to dense matching, Our pipeline can also be applied to texture-less objects, further improving the quality of 3D points and pose estimation.
-            </div>
-          </div>
-        </div>
-    
-
-
-
-      </div>
-    </div>
-    <!--/ Your Image. -->
-  </div>
-</section>
-
-
-<!-- div> 
+<!-- Summary -->
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>        
+        <h2 class="title is-3">Summary</h2>
         <div class="content has-text-justified">
           <p>
-            We present Dense-SfM, a novel Structure from Motion (SfM) framework designed for dense and accurate 3D reconstruction from multi-view images. 
-          </p>
-          <p>
-            Sparse keypoint matching, which traditional SfM methods often rely on, limits both accuracy and point density, especially in texture-less areas. 
-            Dense-SfM addresses this limitation by integrating dense matching with a Gaussian Splatting (GS) based track extension which gives more consistent, longer feature tracks. 
-            To further improve reconstruction accuracy, Dense-SfM is equipped with a multi-view kernelized matching module leveraging transformer and Gaussian Process architectures, for robust track refinement across multi-views.
-            Evaluations on the ETH3D and Texture-Poor SfM datasets show that Dense-SfM offers significant improvements in accuracy and density over state-of-the-art methods.    
+            We present <strong>Dense-SfM</strong>, a novel SfM framework that integrates dense feature matching for <em><strong>accurate and dense 3D reconstruction</strong></em> from multi-view images. To resolve the track fragmentation problem inherent in pairwise dense matching, Dense-SfM leverages <strong>Gaussian Splatting</strong> to reason about 3D point visibility and extend short tracks to additional views &mdash; without sacrificing subpixel accuracy. The extended tracks are then refined by a novel <strong>multi-view kernelized matching module</strong> combining transformer and Gaussian Process architectures, followed by iterative bundle adjustment.
           </p>
         </div>
       </div>
     </div>
-
   </div>
 </section>
-</div-->
 
 
-<section class="section">
+<!-- Teaser Image -->
+<section class="section" style="padding-top: 0;">
   <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is full">
-        <h2 class="title is-3">Method</h2>
-      </div>
-    </div>
-    
-    <!-- Image with full width -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-full">
         <div class="content has-text-centered">
-          <img src="./static/images/overview_real_final.png" alt="Test image description" width="100%">
+          <img src="./static/images/final_abs.png" alt="Dense-SfM overview" width="100%">
         </div>
       </div>
     </div>
-    
-    <!-- Text with narrower width -->
-    <div class="columns is-centered">
-      <div class="column is-four-fifths style="width: 85%;">
-        <div class="content has-text-justified">          
-          <p>
-            Our framework is designed as a three-stage pipeline (see figure above):
-          </p>
-          <p>
-            1. Construct an initial SfM model using a two-view dense matcher (e.g. DKM or RoMa).
-            <br>
-            2. Extend each 3D point's track by projecting it onto new images using Gaussian Splatting.
-            <br>
-            3. Perform iterative SfM refinement to enhance the accuracy of poses and point cloud.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!--/ Abstract. -->
   </div>
 </section>
 
+
+<hr class="section-divider">
+
+
+<!-- Method -->
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
-      <div class="column is full">
-        <h2 class="title is-3">Visualization</h2>
-
-        <div class="content has-text-centered">
-          <img src="./static/images/project_page_visualize.png" alt="Test image description" width="100%">
-          <p class="caption">Left: Qualitative Results on Texture-Poor SfM dataset.  <br> Right: Qualitative Results on IMC 2021 dataset. </p>          
-        </div>
-
+      <div class="column is-full">
+        <h2 class="title is-3">Method</h2>
       </div>
     </div>
-    <!--/ Abstract. -->
+    <div class="columns is-centered" style="margin-top: 1rem;">
+      <div class="column is-one-third">
+        <div class="method-card">
+          <p class="stage-label">Stage 1</p>
+          <h4>Initial SfM via dense matching</h4>
+          <p>Dense pairwise matches (DKM / RoMa) filtered by <strong>mutual bidirectional verification</strong> build an initial SfM with short, mostly two-view tracks.</p>
+        </div>
+      </div>
+      <div class="column is-one-third">
+        <div class="method-card">
+          <p class="stage-label">Stage 2</p>
+          <h4>Track extension via Gaussian Splatting</h4>
+          <p>3D points are treated as small Gaussians. After GS optimization, <strong>visibility-based projection</strong> extends each track to additional co-visible images.</p>
+        </div>
+      </div>
+      <div class="column is-one-third">
+        <div class="method-card">
+          <p class="stage-label">Stage 3</p>
+          <h4>Iterative SfM refinement</h4>
+          <p>A multi-view kernelized <strong>matching module</strong> (transformer + Gaussian Process) refines track coordinates, followed by geometric bundle adjustment.</p>
+        </div>
+      </div>
+    </div>
 
+    <!-- Method overview image -->
+    <div class="columns is-centered has-text-centered" style="margin-top: 2rem;">
+      <div class="column is-full">
+        <div class="content has-text-centered">
+          <img src="./static/images/overview_real_final.png" alt="Method overview" width="100%">
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
 
+<hr class="section-divider">
 
+
+<!-- Contributions -->
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- div> 
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+        <h2 class="title is-3">Contributions</h2>
+      </div>
+    </div>
     <div class="columns is-centered">
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
-          <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
-          </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <div class="column">
-        <h2 class="title is-3">Matting</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
-            </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
-                      type="video/mp4">
-            </video>
+      <div class="column is-four-fifths">
+        <div class="contribution-item">
+          <div class="contribution-number">1</div>
+          <div class="contribution-text">
+            <strong>Dense SfM framework</strong> &mdash; optimized for dense matchers, achieving accurate and dense 3D reconstruction even in texture-poor scenes.
           </div>
-
+        </div>
+        <div class="contribution-item">
+          <div class="contribution-number">2</div>
+          <div class="contribution-text">
+            <strong>GS-based track extension</strong> &mdash; visibility-driven track lengthening that preserves subpixel accuracy, outperforming quantization-based approaches.
+          </div>
+        </div>
+        <div class="contribution-item">
+          <div class="contribution-number">3</div>
+          <div class="contribution-text">
+            <strong>Multi-view kernelized refinement</strong> &mdash; transformer and Gaussian Process architectures jointly leverage feature and positional information for precise track refinement.
+          </div>
+        </div>
+        <div class="contribution-item">
+          <div class="contribution-number">4</div>
+          <div class="contribution-text">
+            <strong>State-of-the-art results</strong> &mdash; ETH3D, Texture-Poor SfM, and IMC PhotoTourism benchmarks, consistently outperforming detector-based and semi-dense baselines.
+          </div>
         </div>
       </div>
-    </div> 
-    </div-->
+    </div>
+  </div>
+</section>
 
-    <!-- Concurrent Work. -->
+
+<hr class="section-divider">
+
+
+<!-- Visualization -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+        <h2 class="title is-3">Visualization</h2>
+        <div class="content has-text-centered">
+          <img src="./static/images/project_page_visualize.png" alt="Visualization results" width="100%">
+          <p class="caption">Left: Qualitative Results on Texture-Poor SfM dataset. <br> Right: Qualitative Results on IMC 2021 dataset.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<hr class="section-divider">
+
+
+<!-- Related Links -->
+<section class="section">
+  <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-full-width">
         <h2 class="title is-3">Related Links</h2>
-
         <div class="content has-text-justified">
           <p>
-            There are excellent works that is related with ours and gave us inspirations.
+            There are excellent works that are related with ours and gave us inspiration.
           </p>
-
           <p>
             <a href="https://github.com/zju3dv/DetectorFreeSfM">Detector-Free SfM</a> proposes a detector-free structure from motion framework that eliminates the requirement of keypoint detection and can recover poses even on challenging texture-poor scenes.
           </p>
-
           <p>
             <a href="https://github.com/Parskatt/DKM">DKM</a> and <a href="https://github.com/Parskatt/RoMa/tree/main">RoMa</a> propose a significantly robust dense feature matcher.
           </p>
         </div>
       </div>
     </div>
-    <!--/ Concurrent Work. -->
-
   </div>
 </section>
 
 
+<!-- BibTeX -->
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
     <pre><code>@misc{lee2025densesfmstructuremotiondense,
-      title={Dense-SfM: Structure from Motion with Dense Consistent Matching}, 
+      title={Dense-SfM: Structure from Motion with Dense Consistent Matching},
       author={JongMin Lee and Sungjoo Yoo},
       year={2025},
       eprint={2501.14277},
       archivePrefix={arXiv},
       primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2501.14277}, 
+      url={https://arxiv.org/abs/2501.14277},
 }</code></pre>
   </div>
 </section>
@@ -350,22 +344,11 @@
 
 <footer class="footer">
   <div class="container">
-    <!-- div> 
-    <div class="content has-text-centered">
-      <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
-    </div -->
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content has-text-centered">
           <p>
-            Website templete from <a href="https://github.com/nerfies/nerfies.github.io">here</a>.
+            Website template from <a href="https://github.com/nerfies/nerfies.github.io">here</a>.
           </p>
         </div>
       </div>

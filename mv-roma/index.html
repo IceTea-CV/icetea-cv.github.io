@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="MV-RoMA project page.">
-  <meta name="keywords" content="MV-RoMA, matching, multi-view">
+        content="MV-RoMa: From Pairwise Matching into Multi-View Track Reconstruction">
+  <meta name="keywords" content="MV-RoMa, matching, multi-view, dense matching, track reconstruction">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MV-RoMA</title>
+  <title>MV-RoMa: From Pairwise Matching into Multi-View Track Reconstruction</title>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
@@ -25,6 +25,69 @@
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
+
+  <style>
+    .conference-badge {
+      color: #4a76a8;
+      font-weight: 600;
+      font-size: 1rem;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.5rem;
+    }
+    .button.is-rounded.is-outlined.is-medium {
+      font-size: 0.95rem;
+      padding: 0.5em 1.2em;
+    }
+    .method-card {
+      background-color: #f5f5f5;
+      border-radius: 10px;
+      padding: 1.5rem;
+      height: 100%;
+    }
+    .method-card .stage-label {
+      color: #888;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.5rem;
+    }
+    .method-card h4 {
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+    }
+    .method-card p {
+      color: #555;
+      font-size: 0.95rem;
+    }
+    .contribution-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 1.2rem;
+    }
+    .contribution-number {
+      background-color: #6b7280;
+      color: white;
+      border-radius: 50%;
+      min-width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.9rem;
+      margin-right: 1rem;
+      margin-top: 0.15rem;
+    }
+    .contribution-text {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    .section-divider {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 0;
+    }
+  </style>
 </head>
 <body>
 
@@ -33,44 +96,38 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">MV-RoMA</h1>
-          <div class="is-size-5 publication-authors">
+          <p class="conference-badge">CVPR 2025</p>
+          <h1 class="title is-1 publication-title">MV-RoMa: From Pairwise Matching into<br>Multi-View Track Reconstruction</h1>
+          <div class="is-size-5 publication-authors" style="margin-top: 1.5rem;">
             <span class="author-block">
-              <a href="https://icetea-cv.github.io/">JongMin Lee</a>
+              <a href="https://icetea-cv.github.io/">Jongmin Lee</a><sup>1,2</sup>&nbsp;&nbsp;
+            </span>
+            <span class="author-block">
+              Seungyeop Kang<sup>1</sup>&nbsp;&nbsp;
+            </span>
+            <span class="author-block">
+              Sungjoo Yoo<sup>1</sup>
             </span>
           </div>
 
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">Seoul National University</span>
+          <div class="is-size-6 publication-authors" style="margin-top: 0.5rem;">
+            <span class="author-block"><sup>1</sup>Seoul National University&nbsp;&nbsp;&nbsp;<sup>2</sup>KAIST</span>
           </div>
 
-          <div class="column has-text-centered">
+          <div class="column has-text-centered" style="margin-top: 1.5rem;">
             <div class="publication-links">
-              <!-- PDF Link. -->
               <span class="link-block">
-                <a href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
+                <a href="" class="button is-rounded is-outlined is-medium">
+                  <span>Project Page</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="" class="button is-rounded is-outlined is-medium">
                   <span>Paper</span>
                 </a>
               </span>
               <span class="link-block">
-                <a href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-              <!-- Code Link. -->
-              <span class="link-block">
-                <a href="" class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
+                <a href="" class="button is-rounded is-outlined is-medium">
                   <span>Code</span>
                 </a>
               </span>
@@ -83,14 +140,15 @@
 </section>
 
 
+<!-- Summary -->
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
+        <h2 class="title is-3">Summary</h2>
         <div class="content has-text-justified">
           <p>
-            aaabbbccc
+            We propose <strong>MV-RoMa</strong>, a multi-view dense matching model that <em>jointly estimates dense correspondences</em> from a source image to multiple co-visible targets in a single forward pass. By embedding sparse geometric priors as <strong>track tokens</strong> into DINOv2 and applying efficient <strong>pixel-aligned attention</strong> at the refinement stage, MV-RoMa produces geometrically consistent multi-view tracks without the prohibitive cost of full cross-attention &mdash; enabling dense and accurate 3D reconstruction in the SfM pipeline.
           </p>
         </div>
       </div>
@@ -99,14 +157,20 @@
 </section>
 
 
+<!-- Videos -->
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-full">
-        <h2 class="title is-3">Video</h2>
+        <h2 class="title is-3">Videos</h2>
+        <div class="content has-text-centered" style="margin-bottom: 2rem;">
+          <video id="video-1" autoplay controls muted loop playsinline width="100%">
+            <source src="./static/videos/video1.mp4" type="video/mp4">
+          </video>
+        </div>
         <div class="content has-text-centered">
-          <video id="main-video" autoplay controls muted loop playsinline width="100%">
-            <source src="./static/videos/demo.mp4" type="video/mp4">
+          <video id="video-2" autoplay controls muted loop playsinline width="100%">
+            <source src="./static/videos/video2.mp4" type="video/mp4">
           </video>
         </div>
       </div>
@@ -115,12 +179,88 @@
 </section>
 
 
+<hr class="section-divider">
+
+
+<!-- Method -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+        <h2 class="title is-3">Method</h2>
+      </div>
+    </div>
+    <div class="columns is-centered" style="margin-top: 1rem;">
+      <div class="column is-one-third">
+        <div class="method-card">
+          <p class="stage-label">Stage 1</p>
+          <h4>Track token construction</h4>
+          <p>Pairwise matches are distilled into compact multi-view tracks via clustering-based sampling, forming a sparse geometric prior.</p>
+        </div>
+      </div>
+      <div class="column is-one-third">
+        <div class="method-card">
+          <p class="stage-label">Stage 2</p>
+          <h4>Track-guided encoder</h4>
+          <p>Track tokens are injected into DINOv2 via attentional sampling, a track transformer, and attentional splatting &mdash; yielding view-consistent features.</p>
+        </div>
+      </div>
+      <div class="column is-one-third">
+        <div class="method-card">
+          <p class="stage-label">Stage 3</p>
+          <h4>Multi-view refiner</h4>
+          <p>Source-aligned target features enable pixel-aligned attention at the finest scale, refining correspondences without quadratic cross-attention cost.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<hr class="section-divider">
+
+
+<!-- Contributions -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+        <h2 class="title is-3">Contributions</h2>
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <div class="contribution-item">
+          <div class="contribution-number">1</div>
+          <div class="contribution-text">
+            <strong>First dense multi-view matcher</strong> &mdash; direct 1-to-N correspondence estimation in a single forward pass, naturally producing geometrically consistent tracks.
+          </div>
+        </div>
+        <div class="contribution-item">
+          <div class="contribution-number">2</div>
+          <div class="contribution-text">
+            <strong>Efficient multi-view architecture</strong> &mdash; track-guided encoder and pixel-aligned refiner avoid full cross-attention overhead.
+          </div>
+        </div>
+        <div class="contribution-item">
+          <div class="contribution-number">3</div>
+          <div class="contribution-text">
+            <strong>State-of-the-art across benchmarks</strong> &mdash; HPatches, ETH3D, Texture-Poor SfM, and IMC PhotoTourism.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- BibTeX -->
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
     <pre><code>@misc{lee2025mvroma,
-      title={MV-RoMA},
-      author={JongMin Lee},
+      title={MV-RoMa: From Pairwise Matching into Multi-View Track Reconstruction},
+      author={Jongmin Lee and Seungyeop Kang and Sungjoo Yoo},
       year={2025},
 }</code></pre>
   </div>
