@@ -134,7 +134,7 @@
               </span>
               <span class="link-block">
                 <a href="" class="button is-rounded is-outlined is-medium">
-                  <span>Code</span>
+                  <span>Code (Will be open)</span>
                 </a>
               </span>
             </div>
@@ -150,11 +150,15 @@
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
+      <div class="column is-full">
         <h2 class="title is-3">Summary</h2>
         <div class="content has-text-centered" style="margin-bottom: 1.5rem;">
-          <img src="./static/images/Overview.png" alt="Overview" width="100%">
+          <img src="./static/images/Overview.png" alt="Overview" width="75%">
         </div>
+      </div>
+    </div>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
         <div class="content has-text-justified">
           <p>
             We propose <strong>MV-RoMa</strong>, a multi-view dense matching model that <em>jointly estimates dense correspondences</em> from a source image to multiple co-visible targets in a single forward pass. By embedding sparse geometric priors as <strong>track tokens</strong> into DINOv2 and applying efficient <strong>pixel-aligned attention</strong> at the refinement stage, MV-RoMa produces geometrically consistent multi-view tracks without the prohibitive cost of full cross-attention &mdash; enabling dense and accurate 3D reconstruction in the SfM pipeline.
@@ -171,21 +175,21 @@
   <div class="container is-max-widescreen">
     <div class="columns is-centered has-text-centered">
       <div class="column is-full">
-        <h2 class="title is-3">Videos</h2>
+        <h2 class="title is-3">Qualitative Results</h2>
       </div>
     </div>
     <div class="columns is-centered">
       <div class="column is-half">
         <div class="video-box">
           <video id="video-1" autoplay controls muted loop playsinline>
-            <source src="./static/videos/aachen.mp4" type="video/mp4">
+            <source src="./static/videos/mvroma_aachen.mp4" type="video/mp4">
           </video>
         </div>
       </div>
       <div class="column is-half">
         <div class="video-box">
           <video id="video-2" autoplay controls muted loop playsinline>
-            <source src="./static/videos/gangnam.mp4" type="video/mp4">
+            <source src="./static/videos/mvroma_gangnam.mp4" type="video/mp4">
           </video>
         </div>
       </div>
@@ -204,7 +208,7 @@
       <div class="column is-full">
         <h2 class="title is-3">Method</h2>
         <div class="content has-text-centered" style="margin-bottom: 1.5rem;">
-          <img src="./static/images/Pipeline.png" alt="Pipeline" width="100%">
+          <img src="./static/images/Pipeline.png" alt="Pipeline" width="75%">
         </div>
       </div>
     </div>
